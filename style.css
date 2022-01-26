@@ -9,7 +9,7 @@ body {
 }
 
 #profile {
-    margin-top: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     justify-content: center;
 }
@@ -40,7 +40,7 @@ h3 {
 main {
     max-width: 750px;
     margin: auto;
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
 }
 
 #intro {
@@ -92,4 +92,10 @@ h2 {
 
 hr {
     width: 300px;
+}
+
+#tryhackme {
+    margin-top: 1.2rem;
+    text-align: center;
+    transform: scale(1.2);
 }
