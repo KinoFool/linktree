@@ -64,30 +64,36 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    text-align: center;
 }
 
-#links button {
-    display: block;
-    margin: 0 auto 0.7rem;
-    padding: 0.7rem 0.5rem;
+button {
     width: 100%;
     max-width: 400px;
     min-width: 300px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.75);
-    color: #3a3a3d;
     font-size: 1.3rem;
     font-weight: 600;
-    cursor: pointer;
+    line-height: 1;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    margin: 0 auto 0.7rem;
+    padding: 0.7rem 0.5rem;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: #3a3a3d;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-#links button:hover {
+button:hover, button:focus {
     background-color: rgb(255, 255, 255);
     color: #008bff;
     transform: scale(1.05);
+}
+
+.svg-icon {
+    position: relative;
+    top: 0.150em;
+    flex-shrink: 0;
 }
 
 hr {
@@ -98,4 +104,12 @@ hr {
     margin-top: 1.2rem;
     text-align: center;
     transform: scale(1.2);
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
